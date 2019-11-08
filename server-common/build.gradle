@@ -1,0 +1,47 @@
+apply plugin: 'net.corda.plugins.cordapp'
+apply plugin: 'java'
+
+sourceSets {
+    main {
+        resources {
+            srcDir rootProject.file("config/dev")
+        }
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation" << "-Xlint:-options" << "-parameters"
+}
+
+cordapp {
+    signing {
+        enabled false
+        options {
+
+        }
+    }
+}
+dependencies {
+    // Corda dependencies.
+    compile "$corda_release_group:corda-rpc:$corda_release_version"
+
+    // CorDapp dependencies.
+//    compile project(":insurance-contract-state")
+//    compile project(":hospital")
+
+    compile("org.springframework.boot:spring-boot-starter-websocket:$spring_boot_version") {
+        exclude group: "org.springframework.boot", module: "spring-boot-starter-logging"
+    }
+
+    compile "org.apache.logging.log4j:log4j-slf4j-impl:${log4j_version}"
+    compile "org.apache.logging.log4j:log4j-web:${log4j_version}"
+    compile "org.slf4j:jul-to-slf4j:$slf4j_version"
+
+
+    cordapp project(":insurance-contract-state")
+    cordapp project(":insurance-common")
+}
+
+
+
+

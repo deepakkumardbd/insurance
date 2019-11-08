@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "10a0dd14-e914-4294-8949-2a2f5f1b62b2",
+		"name": "insurance",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9090/api/v1/issueInsuranceRequest/Issue",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"hospitalName\" : \"Hospital1\",\r\n\t\"insuranceComp\" : \"Insurer1\",\r\n\t\"insuranceId\" : \"123456\",\r\n\t\"initialComments\" : \"cwejhhwgjk\",\r\n\t\"roomNo\" : 10,\r\n\t\"bedNo\" : 12,\r\n\t\"doctorName\" : \"Dr deepak\",\r\n\t\"dept\" : \"ortho\",\r\n\t\"state\" : \"NEW\"\r\n}\r\n "
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/v1/issueInsuranceRequest/Issue",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"v1",
+						"issueInsuranceRequest",
+						"Issue"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/api/v1/me",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/v1/me",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"v1",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/api/v1/allNodes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/v1/allNodes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"v1",
+						"allNodes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/api/v1/getAllRequest/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/v1/getAllRequest/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"v1",
+						"getAllRequest",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9091/api/v1/getAllRequest/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9091/api/v1/getAllRequest/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"api",
+						"v1",
+						"getAllRequest",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9091/api/v1/getAllRequestHistory/b98b96bf-f733-4b56-a210-07dc7cd12b8b",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9091/api/v1/getAllRequestHistory/7168c169-99ae-4f19-bb5e-22a4b5ee0d7c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"api",
+						"v1",
+						"getAllRequestHistory",
+						"7168c169-99ae-4f19-bb5e-22a4b5ee0d7c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:50006/api/example/create-iou?iouValue=1&partyName=O=PartyB,L=New%20York,C=US",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9091/api/v1/issueInsuranceResponse/7168c169-99ae-4f19-bb5e-22a4b5ee0d7c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"api",
+						"v1",
+						"issueInsuranceResponse",
+						"7168c169-99ae-4f19-bb5e-22a4b5ee0d7c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
