@@ -27,8 +27,8 @@ build/nodes/runnodes (Linux)
 ```
 4. Starting the web-server for Hospital and Insurer
 ```
-start java -jar hospital-server/build/libs/hospital-server-0.1.jar (Hospital- server)
-start java -jar insurer-server/build/libs/insurer-server-0.1.jar(Insurer- server)
+start java -jar hospital-server/build/libs/hospital-server-0.1.jar (Hospital-server)
+start java -jar insurer-server/build/libs/insurer-server-0.1.jar(Insurer-server)
 ```
 ### API Collections :
 
